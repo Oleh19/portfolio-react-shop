@@ -37,7 +37,7 @@ export const CartItem: React.FC<CartItemProps> = ({
   };
 
   const onClickRemove = () => {
-    if (window.confirm('Ты действительно хочешь удалить товар?')) {
+    if (window.confirm('Do you want to empty the cart?')) {
       dispatch(removeItem(id));
     }
   };
@@ -50,7 +50,7 @@ export const CartItem: React.FC<CartItemProps> = ({
       <div className="cart__item-info">
         <h3>{title}</h3>
         <p>
-          {type}, {size} pages
+          {type}, {size} m.
         </p>
       </div>
       <div className="cart__item-count">
@@ -92,7 +92,7 @@ export const CartItem: React.FC<CartItemProps> = ({
         </button>
       </div>
       <div className="cart__item-price">
-        <b>{price * count} ₽</b>
+        <b>{price * count} $</b>
       </div>
       <div className="cart__item-remove">
         <div onClick={onClickRemove} className="button button--outline button--circle">

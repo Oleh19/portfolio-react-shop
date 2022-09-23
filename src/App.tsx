@@ -1,5 +1,5 @@
 import Loadable from 'react-loadable';
-import React, { Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -27,7 +27,6 @@ function App() {
             </Suspense>
           }
         />
-        <Route path="item/:id" element={<Suspense fallback={<div>Loading...</div>}></Suspense>} />
         <Route
           path="*"
           element={
@@ -82,3 +81,7 @@ export default App;
 // }
 
 // console.log(CaesarCipher(readline()));
+
+
+
+

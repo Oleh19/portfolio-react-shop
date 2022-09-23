@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -7,14 +7,14 @@ import { CartItem, CartEmpty } from '../components';
 import { selectCart } from '../redux/cart/selectors';
 import { clearItems } from '../redux/cart/slice';
 
-const Cart: React.FC = () => {
+const Cart: FC = () => {
   const dispatch = useDispatch();
   const { totalPrice, items } = useSelector(selectCart);
 
   const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
 
   const onClickClear = () => {
-    if (window.confirm('Очистить корзину?')) {
+    if (window.confirm('Clear cart?')) {
       dispatch(clearItems());
     }
   };
@@ -104,7 +104,7 @@ const Cart: React.FC = () => {
             </span>
             <span>
               {' '}
-              Order price: <b>{totalPrice} UAH</b>{' '}
+              Order price: <b>{totalPrice} $</b>{' '}
             </span>
           </div>
           <div className="cart__bottom-buttons">

@@ -48,7 +48,7 @@ const Home = () => {
     getItems();
   }, [categoryId, sort.sortProperty, searchValue, currentPage]);
 
-  const manga = items.map((obj:any) => <ItemBlock key={obj.id} {...obj} />);
+  const mangaItem = items.map((obj:any) => <ItemBlock key={obj.id} {...obj} />);
   const skeletons = [...new Array(4)].map((_, index) => <Skeleton key={index} />);
 
   return (
@@ -57,14 +57,14 @@ const Home = () => {
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
         <Sort value={sort} />
       </div>
-      <h2 className="content__title">All goods</h2>
+      <h2 className="content__title">All beds</h2>
       {status === 'error' ? (
         <div className="content__error-info">
           <h2>Error 😕</h2>
           <p>Something wrong. Try later</p>
         </div>
       ) : (
-        <div className="content__items">{status === 'loading' ? skeletons : manga}</div>
+        <div className="content__items">{status === 'loading' ? skeletons : mangaItem}</div>
       )}
 
       <Pagination currentPage={currentPage} onChangePage={onChangePage} />

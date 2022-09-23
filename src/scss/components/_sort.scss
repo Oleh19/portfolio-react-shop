@@ -15,7 +15,7 @@
     }
 
     span {
-      color: white;
+      color: black;
       font-weight: 700;
       border-bottom: 1px dashed rgb(48, 38, 38);
       cursor: pointer;
@@ -41,7 +41,7 @@
 
         &.active,
         &:hover {
-          background: rgba(254, 95, 30, 0.5);
+          background: rgb(168, 161, 161);
         }
 
         &.active {

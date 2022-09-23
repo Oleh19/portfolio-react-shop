@@ -28,8 +28,8 @@ export const Header: React.FC = () => {
           <div className="header__logo">
             <img width="58" src={logoSvg} alt="Goods logo" className='header__radius' />
             <div>
-              <h1>Manga store</h1>
-              <p>Choose your book</p>
+              <h1>Bed shop</h1>
+              <p>Choose your bed</p>
             </div>
           </div>
         </Link>
@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
         <div className="header__cart">
           {location.pathname !== '/cart' && (
             <Link to="/cart" className="button button--cart">
-              <span>{totalPrice} UAH</span>
+              <span>{totalPrice} $</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"

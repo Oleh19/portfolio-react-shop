@@ -5,7 +5,7 @@ import { selectCartItemById } from '../../redux/cart/selectors';
 import { CartItem } from '../../redux/cart/types';
 import { addItem } from '../../redux/cart/slice';
 
-const typeNames = ['soft cover', 'hard cover'];
+const typeNames = ['with delivery', 'without delivery'];
 
 type ItemBlockProps = {
   id: string;
@@ -48,10 +48,10 @@ export const ItemBlock: React.FC<ItemBlockProps> = ({
   return (
     <div className="item-block-wrapper">
       <div className="item-block">
-        <Link key={id} to={`/item/${id}`}>
+       
           <img className="item-block__image" src={imageUrl} alt="Item" />
           <h4 className="item-block__title">{title}</h4>
-        </Link>
+      
         <div className="item-block__selector">
           <ul>
             {types.map((typeId) => (
@@ -69,13 +69,13 @@ export const ItemBlock: React.FC<ItemBlockProps> = ({
                 key={size}
                 onClick={() => setActiveSize(i)}
                 className={activeSize === i ? 'active' : ''}>
-                {size} pages
+                {size} m.
               </li>
             ))}
           </ul>
         </div>
         <div className="item-block__bottom">
-          <div className="item-block__price">{price} UAH</div>
+          <div className="item-block__price">{price} $</div>
           <button onClick={onClickAdd} className="button button--outline button--add">
             <svg
               width="12"

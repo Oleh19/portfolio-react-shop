@@ -1,4 +1,4 @@
-export type Pizza = {
+export type Item = {
     id: string;
     title: string;
     price: number;
@@ -14,7 +14,7 @@ export type Pizza = {
     ERROR = 'error',
   }
   
-  export type SearchPizzaParams = {
+  export type SearchItemParams = {
     sortBy: string;
     order: string;
     category: string;
@@ -22,7 +22,7 @@ export type Pizza = {
     currentPage: string;
   };
   
-  export interface PizzaSliceState {
-    items: Pizza[];
+  export interface ItemSliceState {
+    items: Item[];
     status: Status;
   }

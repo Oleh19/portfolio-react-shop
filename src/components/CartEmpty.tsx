@@ -10,7 +10,7 @@ export const CartEmpty: React.FC = () => (
     <p>
       You have not chosen a product yet
       <br />
-      To order pizza, go to the main page.
+      To order goods, go to the main page.
     </p>
     <img src={cartEmptyImg} alt="Empty cart" />
     <Link to="/" className="button button--black">

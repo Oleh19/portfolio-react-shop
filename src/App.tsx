@@ -27,7 +27,7 @@ function App() {
             </Suspense>
           }
         />
-        <Route path="pizza/:id" element={<Suspense fallback={<div>Loading...</div>}></Suspense>} />
+        <Route path="item/:id" element={<Suspense fallback={<div>Loading...</div>}></Suspense>} />
         <Route
           path="*"
           element={

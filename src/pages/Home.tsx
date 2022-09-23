@@ -1,20 +1,20 @@
 import React, { useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import { Categories, Sort, PizzaBlock, Pagination } from '../components';
+import { Categories, Sort, ItemBlock, Pagination } from '../components';
 
-import Skeleton from '../components/PizzaBlock/Skeleton';
+import Skeleton from '../components/ItemBlock/Skeleton';
 
 import { useAppDispatch } from '../redux/store';
 import { selectFilter } from '../redux/filter/selectors';
-import { selectPizzaData } from '../redux/pizza/selectors';
+import { selectItemData } from '../redux/item/selectors';
 import { setCategoryId, setCurrentPage } from '../redux/filter/slice';
-import { fetchPizzas } from '../redux/pizza/asyncAction';
+import { fetchItems } from '../redux/item/asyncAction';
 
 const Home = () => {
   const dispatch = useAppDispatch();
 
-  const { items, status } = useSelector(selectPizzaData);
+  const { items, status } = useSelector(selectItemData);
   const { categoryId, sort, currentPage, searchValue } = useSelector(selectFilter);
 
   const onChangeCategory = useCallback((idx: any) => {
@@ -25,14 +25,14 @@ const Home = () => {
     dispatch(setCurrentPage(page));
   };
 
-  const getPizzas = async () => {
+  const getItems = async () => {
     const sortBy = sort.sortProperty.replace('-', '');
     const order = sort.sortProperty.includes('-') ? 'asc' : 'desc';
     const category = categoryId > 0 ? String(categoryId) : '';
     const search = searchValue;
 
     dispatch(
-      fetchPizzas({
+      fetchItems({
         sortBy,
         order,
         category,
@@ -45,10 +45,10 @@ const Home = () => {
   };
 
   useEffect(() => {
-    getPizzas();
+    getItems();
   }, [categoryId, sort.sortProperty, searchValue, currentPage]);
 
-  const pizzas = items.map((obj) => <PizzaBlock key={obj.id} {...obj} />);
+  const manga = items.map((obj:any) => <ItemBlock key={obj.id} {...obj} />);
   const skeletons = [...new Array(4)].map((_, index) => <Skeleton key={index} />);
 
   return (
@@ -64,7 +64,7 @@ const Home = () => {
           <p>Something wrong. Try later</p>
         </div>
       ) : (
-        <div className="content__items">{status === 'loading' ? skeletons : pizzas}</div>
+        <div className="content__items">{status === 'loading' ? skeletons : manga}</div>
       )}
 
       <Pagination currentPage={currentPage} onChangePage={onChangePage} />

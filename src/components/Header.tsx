@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
       <div className="container">
         <Link to="/">
           <div className="header__logo">
-            <img width="58" src={logoSvg} alt="Pizza logo" className='header__radius' />
+            <img width="58" src={logoSvg} alt="Goods logo" className='header__radius' />
             <div>
               <h1>Manga store</h1>
               <p>Choose your book</p>

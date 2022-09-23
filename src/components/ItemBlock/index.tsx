@@ -7,7 +7,7 @@ import { addItem } from '../../redux/cart/slice';
 
 const typeNames = ['soft cover', 'hard cover'];
 
-type PizzaBlockProps = {
+type ItemBlockProps = {
   id: string;
   title: string;
   price: number;
@@ -17,7 +17,7 @@ type PizzaBlockProps = {
   rating: number;
 };
 
-export const PizzaBlock: React.FC<PizzaBlockProps> = ({
+export const ItemBlock: React.FC<ItemBlockProps> = ({
   id,
   title,
   price,
@@ -46,13 +46,13 @@ export const PizzaBlock: React.FC<PizzaBlockProps> = ({
   };
 
   return (
-    <div className="pizza-block-wrapper">
-      <div className="pizza-block">
-        <Link key={id} to={`/pizza/${id}`}>
-          <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
-          <h4 className="pizza-block__title">{title}</h4>
+    <div className="item-block-wrapper">
+      <div className="item-block">
+        <Link key={id} to={`/item/${id}`}>
+          <img className="item-block__image" src={imageUrl} alt="Item" />
+          <h4 className="item-block__title">{title}</h4>
         </Link>
-        <div className="pizza-block__selector">
+        <div className="item-block__selector">
           <ul>
             {types.map((typeId) => (
               <li
@@ -74,8 +74,8 @@ export const PizzaBlock: React.FC<PizzaBlockProps> = ({
             ))}
           </ul>
         </div>
-        <div className="pizza-block__bottom">
-          <div className="pizza-block__price">{price} UAH</div>
+        <div className="item-block__bottom">
+          <div className="item-block__price">{price} UAH</div>
           <button onClick={onClickAdd} className="button button--outline button--add">
             <svg
               width="12"

@@ -1,5 +1,5 @@
-export * from './PizzaBlock/Skeleton';
-export * from './PizzaBlock';
+export * from './ItemBlock/Skeleton';
+export * from './ItemBlock';
 export * from './Header';
 export * from './Categories';
 export * from './CartItem';

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/bed-shop/static/css/main.f0022d73.css",
+    "main.js": "/bed-shop/static/js/main.f2cedd39.js",
+    "static/js/303.e0b64113.chunk.js": "/bed-shop/static/js/303.e0b64113.chunk.js",
+    "static/js/949.1dd7fc46.chunk.js": "/bed-shop/static/js/949.1dd7fc46.chunk.js",
+    "static/media/empty-cart.png": "/bed-shop/static/media/empty-cart.db905d1f4b063162f25b.png",
+    "static/media/logo.png": "/bed-shop/static/media/logo.0636bab5411177848d15.png",
+    "index.html": "/bed-shop/index.html",
+    "main.f0022d73.css.map": "/bed-shop/static/css/main.f0022d73.css.map",
+    "main.f2cedd39.js.map": "/bed-shop/static/js/main.f2cedd39.js.map",
+    "303.e0b64113.chunk.js.map": "/bed-shop/static/js/303.e0b64113.chunk.js.map",
+    "949.1dd7fc46.chunk.js.map": "/bed-shop/static/js/949.1dd7fc46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0022d73.css",
+    "static/js/main.f2cedd39.js"
+  ]
+}

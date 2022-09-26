@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -122,10 +122,9 @@ const Cart: FC = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"></path>
               </svg>
-
               <span>Back</span>
-            </Link>
-            <div className="button pay-btn">
+            </Link>{' '}
+            <div onClick={() => dispatch(clearItems())} className="button pay-btn">
               <span>Pay</span>
             </div>
           </div>

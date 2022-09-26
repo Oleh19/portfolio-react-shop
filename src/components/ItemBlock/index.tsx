@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectCartItemById } from '../../redux/cart/selectors';
 import { CartItem } from '../../redux/cart/types';

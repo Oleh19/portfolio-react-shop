@@ -5,7 +5,7 @@ import cartEmptyImg from '../assets/image/empty-cart.png';
 export const CartEmpty: React.FC = () => (
   <div className="cart cart--empty">
     <h2>
-      Your cart is empty <span>😕</span>
+      Your cart is empty
     </h2>
     <p>
       You have not chosen a product yet

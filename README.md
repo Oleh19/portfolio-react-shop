@@ -1,4 +1,4 @@
 - TypeScript
-- Rect
+- React
 - SCSS
 - Redux Toolkit

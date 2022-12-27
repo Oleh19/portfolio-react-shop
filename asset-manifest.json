@@ -1,37 +1,19 @@
 {
   "files": {
-    "main.css": "/react-store/static/css/main.edc7f715.css",
-    "main.js": "/react-store/static/js/main.12a39201.js",
-    "static/media/FireForce.mp4": "/react-store/static/media/FireForce.cb752f2f108190f68707.mp4",
-    "static/media/BlackClover.mp4": "/react-store/static/media/BlackClover.1ecf11132966d5e81106.mp4",
-    "static/media/Naruto.mp4": "/react-store/static/media/Naruto.ed1ec65145f98ab36169.mp4",
-    "static/media/loading.gif": "/react-store/static/media/loading.26a1dccbf5676d443a58.gif",
-    "static/media/anime1.5.jpeg": "/react-store/static/media/anime1.5.463c30bbdd525dfa0bee.jpeg",
-    "static/media/anime3.1.png": "/react-store/static/media/anime3.1.7c9bcbea2f9ac3ef29c6.png",
-    "static/media/anime2.2.jpeg": "/react-store/static/media/anime2.2.69bccdf159dbb1b28032.jpeg",
-    "static/media/anime1.png": "/react-store/static/media/anime1.273fe8046e34b256c38b.png",
-    "static/media/anime2.1.webp": "/react-store/static/media/anime2.1.0d1c101acfcc553b4993.webp",
-    "static/media/anime3.5.png": "/react-store/static/media/anime3.5.510ad75cc941671a7dc6.png",
-    "static/media/anime2.3.jpeg": "/react-store/static/media/anime2.3.e819cfd2bdb0a3c4abcb.jpeg",
-    "static/media/anime3.3.jpeg": "/react-store/static/media/anime3.3.7655c075384c0e109a17.jpeg",
-    "static/media/anime2.6.jpeg": "/react-store/static/media/anime2.6.cee8d1526460792be576.jpeg",
-    "static/media/anime1.2.jpeg": "/react-store/static/media/anime1.2.c37d04ea91137e04917d.jpeg",
-    "static/media/anime1.4.jpeg": "/react-store/static/media/anime1.4.0e9824b099139b2d8920.jpeg",
-    "static/media/anime3.4.jpeg": "/react-store/static/media/anime3.4.0797d2112d72e72c063d.jpeg",
-    "static/media/anime3.jpeg": "/react-store/static/media/anime3.d5bda67fb06752f162bd.jpeg",
-    "static/media/anime3.6.jpeg": "/react-store/static/media/anime3.6.2dceea5ee52246baadbe.jpeg",
-    "static/media/anime2.jpeg": "/react-store/static/media/anime2.268c67fe8a764731a37f.jpeg",
-    "static/media/anime2.4.webp": "/react-store/static/media/anime2.4.ac9060cf6cd03df8adf3.webp",
-    "static/media/anime1.1.jpeg": "/react-store/static/media/anime1.1.98bd28686e5b42c4bd6f.jpeg",
-    "static/media/anime1.3.jpeg": "/react-store/static/media/anime1.3.5998743f27a6cd35874b.jpeg",
-    "static/media/anime2.5.jpeg": "/react-store/static/media/anime2.5.c0c0b4477e384ea7b264.jpeg",
-    "static/media/anime3.2.jpeg": "/react-store/static/media/anime3.2.67f59e0911c0ec9c1564.jpeg",
-    "index.html": "/react-store/index.html",
-    "main.edc7f715.css.map": "/react-store/static/css/main.edc7f715.css.map",
-    "main.12a39201.js.map": "/react-store/static/js/main.12a39201.js.map"
+    "main.css": "/portfolio-react-shop/static/css/main.3de12c52.css",
+    "main.js": "/portfolio-react-shop/static/js/main.f736a822.js",
+    "static/js/303.37808c9f.chunk.js": "/portfolio-react-shop/static/js/303.37808c9f.chunk.js",
+    "static/js/949.1dd7fc46.chunk.js": "/portfolio-react-shop/static/js/949.1dd7fc46.chunk.js",
+    "static/media/empty-cart.png": "/portfolio-react-shop/static/media/empty-cart.db905d1f4b063162f25b.png",
+    "static/media/logo.png": "/portfolio-react-shop/static/media/logo.0636bab5411177848d15.png",
+    "index.html": "/portfolio-react-shop/index.html",
+    "main.3de12c52.css.map": "/portfolio-react-shop/static/css/main.3de12c52.css.map",
+    "main.f736a822.js.map": "/portfolio-react-shop/static/js/main.f736a822.js.map",
+    "303.37808c9f.chunk.js.map": "/portfolio-react-shop/static/js/303.37808c9f.chunk.js.map",
+    "949.1dd7fc46.chunk.js.map": "/portfolio-react-shop/static/js/949.1dd7fc46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edc7f715.css",
-    "static/js/main.12a39201.js"
+    "static/css/main.3de12c52.css",
+    "static/js/main.f736a822.js"
   ]
 }
